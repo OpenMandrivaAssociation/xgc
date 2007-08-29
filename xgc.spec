@@ -34,6 +34,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xgc
 %{_datadir}/X11/app-defaults/Xgc
-%{_mandir}/man1/xgc.1x.bz2
+%{_mandir}/man1/xgc.1x*
 
 
