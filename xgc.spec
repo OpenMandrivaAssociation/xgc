@@ -1,15 +1,15 @@
-Name: xgc
-Version: 1.0.1
-Release: %mkrel 5
-Summary: X graphics demo
-Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
+Name:		xgc
+Version:	1.0.1
+Release:	%mkrel 6
+Summary:	X graphics demo
+Group:		Development/X11
+Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+License:	MIT
+BuildRoot:	%{_tmppath}/%{name}-root
 
-BuildRequires: libxt-devel >= 1.0.0
-BuildRequires: libxaw-devel >= 1.0.1
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires:	libxt-devel >= 1.0.0
+BuildRequires:	libxaw-devel >= 1.0.1
+BuildRequires:	x11-util-macros >= 1.0.1
 
 %description
 The xgc program demonstrates various features of the X graphics primitives.
@@ -34,6 +34,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xgc
 %{_datadir}/X11/app-defaults/Xgc
-%{_mandir}/man1/xgc.1x*
-
+%{_mandir}/man1/xgc.1*
 
