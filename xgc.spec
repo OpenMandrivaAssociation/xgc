@@ -1,6 +1,6 @@
 Name:		xgc
 Version:	1.0.1
-Release:	%mkrel 7
+Release:	%mkrel 8
 Summary:	X graphics demo
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
