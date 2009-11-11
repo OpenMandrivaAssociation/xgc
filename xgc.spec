@@ -1,6 +1,6 @@
 Name:		xgc
-Version:	1.0.1
-Release:	%mkrel 9
+Version:	1.0.2
+Release:	%mkrel 1
 Summary:	X graphics demo
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -33,4 +33,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xgc
 %{_datadir}/X11/app-defaults/Xgc
+%{_datadir}/X11/app-defaults/Xgc-color
 %{_mandir}/man1/xgc.1*
