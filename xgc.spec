@@ -1,12 +1,12 @@
 Name:		xgc
 Version:	1.0.5
-Release:	3
+Release:	4
 Summary:	X graphics demo
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
 
-BuildRequires:	libxt-devel >= 1.0.0
+BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	x11-util-macros >= 1.0.1
 BuildRequires:	flex
@@ -19,10 +19,10 @@ The xgc program demonstrates various features of the X graphics primitives.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xgc
