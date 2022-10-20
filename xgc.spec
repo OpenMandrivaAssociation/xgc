@@ -1,11 +1,10 @@
 Name:		xgc
-Version:	1.0.5
-Release:	4
+Version:	1.0.6
+Release:	1
 Summary:	X graphics demo
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
-
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	x11-util-macros >= 1.0.1
@@ -15,7 +14,7 @@ BuildRequires:	flex
 The xgc program demonstrates various features of the X graphics primitives.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -p1
 
 %build
 %configure
@@ -28,4 +27,4 @@ The xgc program demonstrates various features of the X graphics primitives.
 %{_bindir}/xgc
 %{_datadir}/X11/app-defaults/Xgc
 %{_datadir}/X11/app-defaults/Xgc-color
-%{_mandir}/man1/xgc.1*
+%doc %{_mandir}/man1/xgc.1*
